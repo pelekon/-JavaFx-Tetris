@@ -48,7 +48,7 @@ class Game
         game.initModality(Modality.APPLICATION_MODAL);
         GridPane root = new GridPane();
         root.setStyle("-fx-background-image: url(\"sample/TetrisPlaneBg.png\")");
-        Scene gameScene = new Scene(root, tileSize * gridWidth + 280, tileSize * gridHeight - 10);
+        Scene gameScene = new Scene(root, tileSize * gridWidth + 280, tileSize * gridHeight);
         gameScene.setOnKeyPressed(e -> HandleKeyPressEvent(e.getCode()));
         game.setScene(gameScene);
         // Add canvas
